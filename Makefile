@@ -8,7 +8,7 @@ SRC =  	ft_printf.c      	ft_putchar.c \
 	  	ft_print_adres.c	
 
 OBJ = $(SRC:.c=.o)
-NAME = lib_ft_printf.a
+NAME = libftprintf.a
 
 EXUC = tester
 all : $(NAME)
