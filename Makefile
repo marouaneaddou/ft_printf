@@ -23,10 +23,10 @@ tester: $(OBJ) tester.c
 	$(CC) $(CFLAGS)  -c $< -o $@
 
 clean :
-	$(RM) $(OBJ) $(EXUC)
+	$(RM) $(OBJ) 
 
 fclean : clean
-	$(RM) $(NAME) 
+	$(RM) $(NAME) $(EXUC)
 	
 re : fclean all
 .PHONY : all fclean clean re
