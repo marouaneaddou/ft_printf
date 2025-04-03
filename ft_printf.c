@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maddou <maddou@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: maddou <maddou@student.1337.ma >           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 19:20:45 by maddou            #+#    #+#             */
-/*   Updated: 2022/10/27 13:17:05 by maddou           ###   ########.fr       */
+/*   Updated: 2025/04/03 17:06:30 by maddou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "ft_printf.h"
 
 int	ft_print(va_list ap, char c)
@@ -59,3 +60,5 @@ int	ft_printf(const char *str, ...)
 	return (cont);
 	va_end(ap);
 }
+
+

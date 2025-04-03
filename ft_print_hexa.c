@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_hexa.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maddou <maddou@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: maddou <maddou@student.1337.ma >           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 22:47:48 by maddou            #+#    #+#             */
-/*   Updated: 2022/10/27 13:08:42 by maddou           ###   ########.fr       */
+/*   Updated: 2025/04/03 14:08:45 by maddou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "ft_printf.h"
 
 int	ft_putchar_hexa(int n, char c)
@@ -37,7 +38,7 @@ int	ft_print_hexa(unsigned int n, char c)
 		cont += ft_print_hexa(n / 16, c);
 		cont += ft_print_hexa(n % 16, c);
 	}
-	if (n >= 0 && n < 16)
+	if (n < 16)
 		cont += ft_putchar_hexa(n, c);
 	return (cont);
 }

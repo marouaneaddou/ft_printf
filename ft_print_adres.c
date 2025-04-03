@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_adres.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maddou <maddou@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: maddou <maddou@student.1337.ma >           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:00:34 by maddou            #+#    #+#             */
-/*   Updated: 2022/10/25 13:20:52 by maddou           ###   ########.fr       */
+/*   Updated: 2025/04/03 14:09:05 by maddou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_print_adres(unsigned long int n, char p)
 		cont += ft_print_adres(n / 16, p);
 		cont += ft_print_adres(n % 16, p);
 	}
-	if (n >= 0 && n < 16)
+	if (n < 16)
 		cont += ft_putchar(shexam[n]);
 	return (cont);
 }
